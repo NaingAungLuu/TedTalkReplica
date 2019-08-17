@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Ted Talk Replica</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="tv_toolbar_title">Ted Talks</string>
+</resources>
