@@ -16,31 +16,12 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
+            android:background="@android:color/white"
+            app:title="@string/tb_title"
+            app:titleTextColor="@color/colorAccent"
             android:theme="@style/Theme.Design.Light"
+            app:layout_scrollFlags="scroll|snapMargins|enterAlways"
             >
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/tv_toolbar_title"
-                android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
-                android:textColor="@color/colorAccent"/>
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent">
-
-                <ImageButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:src="@drawable/ic_more_vert_black_24dp"
-                    android:tint="@color/colorAccent"
-                    android:background="?android:attr/selectableItemBackground"
-                    android:padding="@dimen/margin_medium"
-                    />
-
-            </RelativeLayout>
 
         </android.support.v7.widget.Toolbar>
 
@@ -48,18 +29,23 @@
 
 
         <android.support.design.widget.TabLayout
+            android:id="@+id/tl_tablayout"
             android:layout_width="match_parent"
             android:layout_height="?android:attr/actionBarSize"
-            android:theme="@style/tabtheme">
+            app:tabTextColor="@android:color/darker_gray"
+            app:tabTextAppearance="@style/TextAppearance.AppCompat.Small"
+            app:tabSelectedTextColor="@color/colorAccent"
+            app:tabIndicatorColor="@color/colorAccent"
+            android:theme="@style/tabtheme"
+            app:layout_scrollFlags="exitUntilCollapsed">
 
 
         </android.support.design.widget.TabLayout>
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_main" />
-
     <android.support.v4.view.ViewPager
+        android:id="@+id/vp_viewpager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="android.support.design.widget.AppBarLayout$ScrollingViewBehavior">

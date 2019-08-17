@@ -14,8 +14,8 @@
         <ImageView
             android:id="@+id/iv_talker"
             android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:src="@drawable/talker_1"
+            android:layout_height="@dimen/iv_talker_height"
+            android:src="@drawable/talker_2"
             android:scaleType="centerCrop"
             android:foreground="@drawable/fg_gradient"/>
 
@@ -23,10 +23,10 @@
             android:id="@+id/tv_talker"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="John Doerr"
+            android:text="@string/tv_talker_2"
             android:textColor="@android:color/white"
             android:layout_above="@id/tv_topic"
-            android:textSize="14dp"
+            android:textSize="@dimen/text_size_small"
             android:layout_alignLeft="@id/tv_topic"/>
 
         <TextView
@@ -34,13 +34,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignBottom="@id/iv_talker"
-            android:text="Why goverments should prioritize living things"
+            android:text="@string/tv_topic_2"
             android:textColor="@android:color/white"
             android:textStyle="bold"
             android:layout_toLeftOf="@id/btn_more"
-            android:textSize="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginBottom="24dp"/>
+            android:textSize="@dimen/text_size_medium"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginBottom="@dimen/margin_medium2x"/>
 
         <ImageButton
             android:id="@+id/btn_more"
@@ -50,9 +50,20 @@
             android:tint="@android:color/white"
             android:background="?android:attr/selectableItemBackground"
             android:layout_alignParentRight="true"
-            android:layout_alignBottom="@id/iv_talker"
-            android:layout_marginBottom="16dp"
-            android:padding="8dp" />
+            android:layout_above="@id/tv_video_length"
+            android:padding="@dimen/margin_small"/>
+
+        <TextView
+            android:id="@+id/tv_video_length"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_video_length_2"
+            android:textSize="@dimen/text_size_medium2x"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:layout_marginRight="@dimen/margin_medium"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@id/iv_talker"/>
 
     </RelativeLayout>
 

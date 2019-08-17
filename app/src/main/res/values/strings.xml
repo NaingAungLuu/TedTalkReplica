@@ -1,5 +1,15 @@
 <resources>
     <string name="app_name">Ted Talk Replica</string>
     <string name="title_activity_main2">MainActivity2</string>
-    <string name="tv_toolbar_title">Ted Talks</string>
+    <string name="tv_toolbar_title">TED Talks</string>
+    <string name="tv_video_length">10:00</string>
+    <string name="tv_talker">John Doerr</string>
+    <string name="tv_talker_2">Jason Shen</string>
+    <string name="tv_topic_1">Why goverments should prioritize living things</string>
+    <string name="tv_topic_2">Looking for a job? Highlight your ability, not your experience</string>
+    <string name="tv_video_length_2">6:23</string>
+    <string name="tv_talker_3">Amy Cuddy</string>
+    <string name="tv_video_length_3">21:02</string>
+    <string name="tv_topic_3">Your body language may shape who you are</string>
+    <string name="tb_title">TED Talks</string>
 </resources>
